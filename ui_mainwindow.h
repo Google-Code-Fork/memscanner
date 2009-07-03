@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading ui file 'mainwindow.ui'
 **
-** Created: Sat Mar 7 21:29:03 2009
+** Created: Fri Jul 3 15:38:34 2009
 **      by: Qt User Interface Compiler version 4.5.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling ui file!
@@ -93,19 +93,19 @@ public:
     {
         if (MainWindowClass->objectName().isEmpty())
             MainWindowClass->setObjectName(QString::fromUtf8("MainWindowClass"));
-        MainWindowClass->resize(361, 296);
+        MainWindowClass->resize(376, 296);
         QIcon icon;
-        icon.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/actions/system-search.png")), QIcon::Normal, QIcon::Off);
+        icon.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/search.png")), QIcon::Normal, QIcon::Off);
         MainWindowClass->setWindowIcon(icon);
         actionExit = new QAction(MainWindowClass);
         actionExit->setObjectName(QString::fromUtf8("actionExit"));
         QIcon icon1;
-        icon1.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/actions/gnome-logout.png")), QIcon::Normal, QIcon::Off);
+        icon1.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/logout.png")), QIcon::Normal, QIcon::Off);
         actionExit->setIcon(icon1);
         actionTheme = new QAction(MainWindowClass);
         actionTheme->setObjectName(QString::fromUtf8("actionTheme"));
         QIcon icon2;
-        icon2.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/actions/gtk-new.png")), QIcon::Normal, QIcon::Off);
+        icon2.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/new.png")), QIcon::Normal, QIcon::Off);
         actionTheme->setIcon(icon2);
         centralwidget = new QWidget(MainWindowClass);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
@@ -123,7 +123,7 @@ public:
         toolButton_2->setObjectName(QString::fromUtf8("toolButton_2"));
         toolButton_2->setCursor(QCursor(Qt::PointingHandCursor));
         QIcon icon3;
-        icon3.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/actions/gtk-refresh.png")), QIcon::Normal, QIcon::Off);
+        icon3.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/refresh.png")), QIcon::Normal, QIcon::Off);
         toolButton_2->setIcon(icon3);
 
         horizontalLayout_2->addWidget(toolButton_2);
@@ -230,7 +230,7 @@ public:
         verticalLayout_2->addItem(verticalSpacer_3);
 
         QIcon icon4;
-        icon4.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/gnome/32x32/categories/package_settings.png")), QIcon::Normal, QIcon::Off);
+        icon4.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/settings.png")), QIcon::Normal, QIcon::Off);
         tabWidget->addTab(tab, icon4, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
@@ -291,7 +291,7 @@ public:
         toolButton->setObjectName(QString::fromUtf8("toolButton"));
         toolButton->setCursor(QCursor(Qt::PointingHandCursor));
         QIcon icon5;
-        icon5.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/actions/stock_right.png")), QIcon::Normal, QIcon::Off);
+        icon5.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/arrow.png")), QIcon::Normal, QIcon::Off);
         toolButton->setIcon(icon5);
 
         verticalLayout_3->addWidget(toolButton);
@@ -300,7 +300,7 @@ public:
         toolButton_3->setObjectName(QString::fromUtf8("toolButton_3"));
         toolButton_3->setCursor(QCursor(Qt::PointingHandCursor));
         QIcon icon6;
-        icon6.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/actions/editdelete.png")), QIcon::Normal, QIcon::Off);
+        icon6.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/delete.png")), QIcon::Normal, QIcon::Off);
         toolButton_3->setIcon(icon6);
 
         verticalLayout_3->addWidget(toolButton_3);
@@ -316,27 +316,27 @@ public:
         if (tableWidget->columnCount() < 5)
             tableWidget->setColumnCount(5);
         QIcon icon7;
-        icon7.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/mimetypes/ascii.png")), QIcon::Normal, QIcon::Off);
+        icon7.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/doc.png")), QIcon::Normal, QIcon::Off);
         QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
         __qtablewidgetitem->setIcon(icon7);
         tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
         QIcon icon8;
-        icon8.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/mimetypes/x-office-presentation.png")), QIcon::Normal, QIcon::Off);
+        icon8.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/board.png")), QIcon::Normal, QIcon::Off);
         QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
         __qtablewidgetitem1->setIcon(icon8);
         tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
         QIcon icon9;
-        icon9.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/actions/address-book-new.png")), QIcon::Normal, QIcon::Off);
+        icon9.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/book.png")), QIcon::Normal, QIcon::Off);
         QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
         __qtablewidgetitem2->setIcon(icon9);
         tableWidget->setHorizontalHeaderItem(2, __qtablewidgetitem2);
         QIcon icon10;
-        icon10.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/mimetypes/application-x-executable.png")), QIcon::Normal, QIcon::Off);
+        icon10.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/exec.png")), QIcon::Normal, QIcon::Off);
         QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
         __qtablewidgetitem3->setIcon(icon10);
         tableWidget->setHorizontalHeaderItem(3, __qtablewidgetitem3);
         QIcon icon11;
-        icon11.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/actions/gtk-paste.png")), QIcon::Normal, QIcon::Off);
+        icon11.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/note.png")), QIcon::Normal, QIcon::Off);
         QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
         __qtablewidgetitem4->setIcon(icon11);
         tableWidget->setHorizontalHeaderItem(4, __qtablewidgetitem4);
@@ -346,7 +346,7 @@ public:
         horizontalLayout_6->addWidget(tableWidget);
 
         QIcon icon12;
-        icon12.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/actions/edit-find-replace.png")), QIcon::Normal, QIcon::Off);
+        icon12.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/edit.png")), QIcon::Normal, QIcon::Off);
         tabWidget->addTab(tab_2, icon12, QString());
 
         verticalLayout->addWidget(tabWidget);
@@ -368,7 +368,7 @@ public:
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
         pushButton_2->setEnabled(false);
         QIcon icon13;
-        icon13.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/actions/process-stop.png")), QIcon::Normal, QIcon::Off);
+        icon13.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/stop.png")), QIcon::Normal, QIcon::Off);
         pushButton_2->setIcon(icon13);
 
         horizontalLayout->addWidget(pushButton_2);
@@ -377,7 +377,7 @@ public:
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
         pushButton_3->setEnabled(false);
         QIcon icon14;
-        icon14.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/actions/edit-redo.png")), QIcon::Normal, QIcon::Off);
+        icon14.addPixmap(QPixmap(QString::fromUtf8(":/icons/icons/redo.png")), QIcon::Normal, QIcon::Off);
         pushButton_3->setIcon(icon14);
 
         horizontalLayout->addWidget(pushButton_3);
@@ -386,9 +386,7 @@ public:
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         sizePolicy3.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
         pushButton->setSizePolicy(sizePolicy3);
-        QIcon icon15;
-        icon15.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/actions/gnome-searchtool.png")), QIcon::Normal, QIcon::Off);
-        pushButton->setIcon(icon15);
+        pushButton->setIcon(icon);
 
         horizontalLayout->addWidget(pushButton);
 
@@ -398,14 +396,12 @@ public:
         MainWindowClass->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindowClass);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 361, 25));
+        menubar->setGeometry(QRect(0, 0, 376, 25));
         menuMenu = new QMenu(menubar);
         menuMenu->setObjectName(QString::fromUtf8("menuMenu"));
         menuView = new QMenu(menuMenu);
         menuView->setObjectName(QString::fromUtf8("menuView"));
-        QIcon icon16;
-        icon16.addPixmap(QPixmap(QString::fromUtf8("../../../../../usr/share/icons/Tango/32x32/actions/document-new.png")), QIcon::Normal, QIcon::Off);
-        menuView->setIcon(icon16);
+        menuView->setIcon(icon2);
         MainWindowClass->setMenuBar(menubar);
         statusBar = new QStatusBar(MainWindowClass);
         statusBar->setObjectName(QString::fromUtf8("statusBar"));
