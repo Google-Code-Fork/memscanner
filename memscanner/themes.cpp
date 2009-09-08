@@ -1,6 +1,6 @@
+#include <QStyleFactory>
 #include "themes.h"
 #include "ui_themes.h"
-#include <QStyleFactory>
 
 Themes::Themes(QWidget *parent) :
     QWidget(parent),

@@ -29,9 +29,9 @@ void intScan::run(){
                     break;
             }
 
-            if(action==BIGGER&&result>value ||
-               action==LESS&&result<value ||
-               action==EXACT&&result==value)
+            if((action==BIGGER&&result>value) ||
+               (action==LESS&&result<value) ||
+               (action==EXACT&&result==value))
             {
                 Result *result=new intResult(i, proc, value);
                 emit found(result);

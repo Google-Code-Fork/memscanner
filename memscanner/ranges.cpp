@@ -1,4 +1,6 @@
 #include <iostream>
+#include <boost/regex.hpp>
+
 #include "ranges.h"
 
 Ranges::Range::Range(unsigned long START, unsigned long STOP) :
@@ -21,33 +23,39 @@ bool Ranges::getRanges(int pid, std::vector<Ranges::Range> &ranges, bool exec, b
 
     std::string line;
     while(getline(stream, line)){
-        if(line.empty())
-            continue;
-        if(!heap&&line.find("[heap]")!=std::string::npos)
-            continue;
-
-        if(!stack&&line.find("[stack]")!=std::string::npos)
+        boost::match_results<std::string::const_iterator> results;
+        static const boost::regex exp("([0-9a-f]+)-([0-9a-f]+) +(.{4}) +([0-9a-f]+) +(..:..) +([0-9]+) +(.*)");
+        if(!boost::regex_match(line, results, exp))
             continue;
 
-        if(line.find("/dev/")!=std::string::npos)
+        std::vector<std::string> columns;
+        for(unsigned i=1;i<results.size();i++)
+            columns.push_back(results[i]);
+
+        if(!heap&&columns[6]=="[heap]")
             continue;
-        if(line.find("/share/")!=std::string::npos)
+
+        if(!stack&&columns[6]=="[stack]")
             continue;
-        if(line.find("/lib/")!=std::string::npos)
+
+        if(columns[6].find("/dev/")!=std::string::npos)
+            continue;
+        if(columns[6].find("/share/")!=std::string::npos)
+            continue;
+        if(columns[6].find("/lib/")!=std::string::npos)
             continue;
 
 
-        if(!exec&&line.find(" r-")!=std::string::npos)
+        if(!exec&&columns[2][1]=='-')
             continue;
 
-        if(line.find(" r")==std::string::npos)
+        if(columns[2][0]=='-')
             continue;
 
         std::string hex="0x";
-        unsigned long start=HexToDec(hex+line.substr(0, 8));
-        unsigned long stop=HexToDec(hex+line.substr(9, 8));
+        unsigned long start=HexToDec(hex+columns[0]);
+        unsigned long stop=HexToDec(hex+columns[1]);
         ranges.push_back(Ranges::Range(start, stop));
-
     }
 
     return true;
