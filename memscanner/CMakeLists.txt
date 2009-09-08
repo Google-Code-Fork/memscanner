@@ -44,10 +44,3 @@ add_executable(memscanner ${memscanner_SRCS} ${memscanner_UIS_H} ${memscanner_MO
 
 target_link_libraries(memscanner ${QT_LIBRARIES} pList)
 
-
-
-
-install(
-TARGETS memscanner
-RUNTIME DESTINATION /usr/bin
-)
